@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -20,6 +20,6 @@ async def display_webpage(request: Request):
     )
 
 
-@app.get("/test")
-async def test_open_ai(request: Request):
-    return await query_open_ai()
+@app.get("/countries/{country}", response_class=HTMLResponse)
+async def query_country(request: Request, country: str):
+    return JSONResponse(await query_open_ai(country))
