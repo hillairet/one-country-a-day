@@ -1,0 +1,12 @@
+Please provide a summary about this country in JSON format.
+For each field provide a string with the text requested.
+Include the following fields:
+* "history": 2-3 sentences about the country's history and how it came to be
+* "flag": A quick description of the flag and the meaning of it's appearance
+* "cuisine": 2-3 sentences about the local cuisine
+* "dish": The most popular dish and roughly its ingredients and how it's made
+* "land_size": The land size ranking compared to the other countries as well as the relative size compared to Canada, i.e. is it half, or a tenth of Canada's size?
+* "population": The absolute size of the population as well as the ranking compared to other countries and the relative size compared to Canada
+* "fauna": The name and one sentence description of 2 to 3 animals that are specific or unique to this country
+* "food_production": The name and one sentence description of the top 2 to 3 food productions
+* "borders": The list of countries, seas and oceans bordering the country
